@@ -11,10 +11,10 @@
 from dotenv import load_dotenv
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 from langchain_community.document_loaders import DirectoryLoader, TextLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
-from langchain.retrievers import MultiQueryRetriever
-from langchain.schema import Document
+from langchain_classic.retrievers import MultiQueryRetriever
+from langchain_core.documents import Document
 
 load_dotenv()
 
